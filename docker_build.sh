@@ -21,4 +21,4 @@ DATE="$(date)"
 # Final Build Image Tag
 GPU_IMAGE_TAG=${DOCKER_REPO}$BRAND:tools-${VERSION}-gpu
 
-docker build --network=host --build-arg VERSION=1.0.0 --build-arg DATE="$(date)" -f Dockerfile.gpu -t $GPU_IMAGE_TAG ./
+docker build --network=host --build-arg VERSION=1.0.0 --build-arg DATE="$(date)" -f Dockerfile -t $GPU_IMAGE_TAG ./
